@@ -18,8 +18,8 @@ app.use(
     contentSecurityPolicy: {
       directives: {
         defaultSrc: ["'self'"],
-        styleSrc: ["'self'", "https://cdn.jsdelivr.net"],
-        scriptSrc: ["'self'"],
+        styleSrc: ["'self'", "'unsafe-inline'", "https://cdn.jsdelivr.net"],
+        scriptSrc: ["'self'", "'unsafe-inline'"],
         fontSrc: ["'self'", "https://cdn.jsdelivr.net"],
         imgSrc: ["'self'", "data:", "https:"],
         connectSrc: ["'self'", "https://cdn.jsdelivr.net", "https://ipapi.co"],
