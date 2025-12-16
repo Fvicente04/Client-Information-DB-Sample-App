@@ -1,6 +1,7 @@
 {
-  "name": "simple-web-node",
+  "name": "client-info-management-gcp",
   "version": "1.0.0",
+  "description": "Client Information Management System deployed on Google Cloud Platform - B8IS124 CA1 Project",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -10,10 +11,13 @@
   "engines": {
     "node": ">=22.0.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": ["gcp", "app-engine", "cloud-sql", "nodejs", "express", "postgresql"],
+  "author": "Felipe Vicente <Fvicente04@users.noreply.github.com>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fvicente04/Client-Information-DB-Sample-App.git"
+  },
   "dependencies": {
     "@google-cloud/secret-manager": "^5.6.0",
     "axios": "^1.12.0",
