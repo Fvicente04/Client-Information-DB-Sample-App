@@ -11,11 +11,6 @@ steps:
     args:
       - '-c'
       - |
-        echo "=========================================="
-        echo "Cloud SQL Proxy and Database Migration"
-        echo "Project: client-info-felipe-2025"
-        echo "=========================================="
-        
         echo "Downloading Cloud SQL Proxy..."
         curl -o cloud-sql-proxy https://storage.googleapis.com/cloud-sql-connectors/cloud-sql-proxy/v2.14.2/cloud-sql-proxy.linux.amd64
         chmod +x cloud-sql-proxy
@@ -35,9 +30,6 @@ steps:
         
         echo "Stopping Cloud SQL Proxy..."
         kill $$PROXY_PID || true
-        
-        echo "? Migration completed successfully!"
-        echo "=========================================="
 
   # Step 3: Deploy to Google App Engine
   - name: 'gcr.io/cloud-builders/gcloud'
